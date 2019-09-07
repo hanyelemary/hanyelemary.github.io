@@ -6,12 +6,12 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const config = {
   entry: './index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, './'),
     filename: 'bundle.js'
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './index.html'
+      template: './template/index.html'
     }),
     new MiniCssExtractPlugin({
       filename: 'styles.css',
@@ -56,7 +56,7 @@ const config = {
     ]
   },
   devServer: {
-    contentBase: './dist'
+    contentBase: './'
   }
 }
 
