@@ -1,0 +1,38 @@
+@import '../Common/default.less';
+
+@padding-space: 114px;
+
+footer.dark {
+  background-color: #000;
+  color: rgba(255, 255, 255, 0.65);
+  a {
+    color: #fff;
+  }
+  .bottom-bar {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    overflow: hidden;
+  }
+}
+
+footer {
+  border-top: 1px solid @border-color;
+  clear: both;
+  font-size: 12px;
+  background: #fff;
+  position: relative;
+  z-index: 100;
+  color: @site-text-color;
+  box-shadow: 0 1000px 0 1000px #fff;
+  .bottom-bar {
+    border-top: 1px solid @border-color;
+    padding: 20px @padding-space;
+    margin: 0;
+    line-height: 24px;
+    a {
+      color: rgba(255, 255, 255, 0.65);
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
