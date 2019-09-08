@@ -1,44 +1,49 @@
-import React from 'react';
-import DocumentTitle from 'react-document-title';
-import { enquireScreen } from 'enquire-js';
+import React from 'react'
+import DocumentTitle from 'react-document-title'
+import { enquireScreen } from 'enquire-js'
 
-import Header from '../Layout/Header';
-import Footer from '../Layout/Footer';
-import Banner from './Banner';
+import Header from '../Layout/Header'
+import Footer from '../Layout/Footer'
+import Banner from './Banner'
 
-import './home.less';
-import './responsive.less';
+import './home.less'
+import './responsive.less'
 
-let isMobile;
+let isMobile
 
 enquireScreen((b) => {
-  isMobile = b;
-});
+  isMobile = b
+})
 
 class Home extends React.PureComponent {
-  state = {
-    isMobile,
+  constructor (props) {
+    super(props)
+    this.state = {
+      isMobile
+    }
   }
-  componentDidMount() {
+
+  componentDidMount () {
     enquireScreen((b) => {
       this.setState({
-        isMobile: !!b,
-      });
-    });
+        isMobile: !!b
+      })
+    })
   }
-  render() {
+
+  render () {
     return (
-      <DocumentTitle title="Hany Elemary - Github Page">
+      <DocumentTitle title='Hany Elemary - Github Page'>
         <div>
           <Header isMobile={this.state.isMobile} />
-          <div className="home-wrapper">
+          <div className='home-wrapper'>
             <Banner isMobile={this.state.isMobile} />
           </div>
           <Footer />
         </div>
       </DocumentTitle>
-    );
+    )
   }
 }
 
-export default Home;
+export default Home

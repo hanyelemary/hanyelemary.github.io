@@ -1,46 +1,51 @@
-import React from 'react';
-import classnames from 'classnames';
-import { Popover } from 'antd';
+import React from 'react'
+import classnames from 'classnames'
+import { Popover } from 'antd'
 
-export default class PhoneNav extends React.PureComponent {
-  state = {
-    show: false,
+class PhoneNav extends React.PureComponent {
+  constructor (props) {
+    super(props)
+    this.state = {
+      show: false
+    }
   }
 
-  componentWillReceiveProps() {
+  componentWillReceiveProps () {
     if (this.state.show) {
       this.setState({
-        show: false,
-      });
+        show: false
+      })
     }
   }
 
   onMenuVisibleChange = (show) => {
     this.setState({
-      show,
-    });
+      show
+    })
   }
 
-  render() {
-    const { children } = this.props;
-    const { show } = this.state;
+  render () {
+    const { children } = this.props
+    const { show } = this.state
     const barClassNamr = classnames('phone-nav-bar', {
-      open: show,
-    });
+      open: show
+    })
     return (
       <Popover
-        overlayClassName="popover-menu"
-        placement="bottomRight"
+        overlayClassName='popover-menu'
+        placement='bottomRight'
         content={children}
-        trigger="click"
+        trigger='click'
         visible={show}
         arrowPointAtCenter
         onVisibleChange={this.onMenuVisibleChange}
       >
-        <div className="phone-nav-bar-wrapper">
+        <div className='phone-nav-bar-wrapper'>
           <i className={barClassNamr} />
         </div>
       </Popover>
-    );
+    )
   }
 }
+
+export default PhoneNav

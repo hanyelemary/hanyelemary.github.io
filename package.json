@@ -45,6 +45,8 @@
     "less-loader": "^5.0.0",
     "mini-css-extract-plugin": "^0.8.0",
     "pre-commit": "^1.2.2",
+    "snazzy": "^8.0.0",
+    "standard": "^13.0.0",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.8"
   },
@@ -54,8 +56,15 @@
   "scripts": {
     "build": "webpack -d --mode development",
     "preprod": "webpack -d --mode production",
-    "lint": "eslint --ext .js,.jsx src/",
-    "eslint-fix": "eslint --fix src/ --ext .js,.jsx",
+    "lint": "standard --fix --vebose | snazzy",
     "deploy": "rm -rf dist && npm run preprod && node ./deploy.js"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "bundle.js",
+      "webpack.config.js",
+      "node_modules/"
+    ]
   }
 }
