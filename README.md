@@ -3,6 +3,15 @@ Github page for Hany Elemary [https://hanyelemary.github.io/](https://hanyelemar
 
 ## Getting started
 
+### Prerequisites
+* [NodeJS](https://nodejs.org/en/)
+* [nvm (Node Version Manager)](https://github.com/nvm-sh/nvm)
+
+### Set Nodejs version
+```
+nvm use
+```
+
 ### Install dependencies
 ```
 npm i
