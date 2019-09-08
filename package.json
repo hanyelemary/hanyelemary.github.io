@@ -39,7 +39,6 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
-    "gh-pages": "^2.1.1",
     "html-webpack-plugin": "^3.2.0",
     "less": "^3.10.3",
     "less-loader": "^5.0.0",
@@ -55,9 +54,8 @@
   ],
   "scripts": {
     "build": "webpack -d --mode development",
-    "preprod": "webpack -d --mode production",
-    "lint": "standard --fix --vebose | snazzy",
-    "deploy": "rm -rf dist && npm run preprod && node ./deploy.js"
+    "preprod": "npm run lint && webpack -d --mode production",
+    "lint": "standard --fix --vebose | snazzy"
   },
   "standard": {
     "parser": "babel-eslint",
