@@ -1,5 +1,7 @@
 # Profile page - Hany Elemary
-Github page for Hany Elemary [https://hanyelemary.github.io/](https://hanyelemary.github.io/)
+> Github page for Hany Elemary [https://hanyelemary.github.io/](https://hanyelemary.github.io/)
+
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 ## Getting started
 
