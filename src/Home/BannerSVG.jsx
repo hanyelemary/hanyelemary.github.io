@@ -1,4 +1,57 @@
+/* eslint-disable */
 import React from 'react'
+import TweenOne from 'rc-tween-one'
+import SvgDrawPlugin from 'rc-tween-one/lib/plugin/SvgDrawPlugin'
+TweenOne.plugins.push(SvgDrawPlugin)
+
+const animate = {
+  scale: {
+    scale: 0,
+    opacity: 0,
+    type: 'from',
+    ease: 'easeOutQuad',
+  },
+  alpha: {
+    opacity: 0,
+    type: 'from',
+    ease: 'easeOutQuad',
+  },
+  y: {
+    y: 30,
+    opacity: 0,
+    type: 'from',
+    ease: 'easeOutQuad',
+  },
+  y2: {
+    y: -30,
+    opacity: 0,
+    type: 'from',
+    ease: 'easeOutQuad',
+  },
+  x: {
+    x: 30,
+    opacity: 0,
+    type: 'from',
+    ease: 'easeOutQuad',
+  },
+  x2: {
+    x: -30,
+    opacity: 0,
+    type: 'from',
+    ease: 'easeOutQuad',
+  },
+  draw: {
+    SVGDraw: 0,
+    type: 'from',
+    ease: 'easeOutQuad',
+  },
+  loop: {
+    yoyo: true,
+    repeat: -1,
+    duration: 2500,
+  },
+};
+
 
 export default function () {
   return (
@@ -271,42 +324,50 @@ export default function () {
                   </g>
                 </g>
               </g>
-              <g id='Rectangle-5' transform='translate(10.000000, 23.000000)'>
-                <g id='path-4-Clipped'>
-                  <mask id='mask-4' fill='white'>
-                    <use href='#path-3' />
-                  </mask>
-                  <g id='path-4' />
-                  <rect id='path-4' stroke='#899199' stroke-width='2' fill='#FFFFFF' fill-rule='nonzero' mask='url(#mask-4)' x='0' y='0' width='100' height='19' rx='3' />
+              <TweenOne component="g" animation={{ ...animate.x, delay: 450 }}>
+                <g id='Rectangle-5' transform='translate(10.000000, 23.000000)'>
+                  <g id='path-4-Clipped'>
+                    <mask id='mask-4' fill='white'>
+                      <use href='#path-3' />
+                    </mask>
+                    <g id='path-4' />
+                    <rect id='path-4' stroke='#899199' stroke-width='2' fill='#FFFFFF' fill-rule='nonzero' mask='url(#mask-4)' x='0' y='0' width='100' height='19' rx='3' />
+                  </g>
                 </g>
-              </g>
-              <g id='Rectangle-5-Copy' transform='translate(10.000000, 47.000000)'>
-                <g id='path-6-Clipped'>
-                  <mask id='mask-6' fill='white'>
-                    <use href='#path-5' />
-                  </mask>
-                  <g id='path-6' />
-                  <rect id='path-6' stroke='#899199' stroke-width='2' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-6)' x='0' y='0' width='69' height='50' rx='3' />
+              </TweenOne>
+              <TweenOne component="g" animation={{ ...animate.x, delay: 650 }}>
+                <g id='Rectangle-5-Copy' transform='translate(10.000000, 47.000000)'>
+                  <g id='path-6-Clipped'>
+                    <mask id='mask-6' fill='white'>
+                      <use href='#path-5' />
+                    </mask>
+                    <g id='path-6' />
+                    <rect id='path-6' stroke='#899199' stroke-width='2' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-6)' x='0' y='0' width='69' height='50' rx='3' />
+                  </g>
                 </g>
-              </g>
-              <g id='Rectangle-5-Copy-2' transform='translate(10.000000, 102.000000)'>
-                <g id='path-8-Clipped'>
-                  <mask id='mask-8' fill='white'>
-                    <use href='#path-7' />
-                  </mask>
-                  <g id='path-8' />
-                  <rect id='path-8' stroke='#899199' stroke-width='2' fill='#FFFFFF' fill-rule='nonzero' mask='url(#mask-8)' x='0' y='0' width='69' height='8' rx='2' />
+              </TweenOne>
+              <TweenOne component="g" animation={{ ...animate.x, delay: 850 }}>
+                <g id='Rectangle-5-Copy-2' transform='translate(10.000000, 102.000000)'>
+                  <g id='path-8-Clipped'>
+                    <mask id='mask-8' fill='white'>
+                      <use href='#path-7' />
+                    </mask>
+                    <g id='path-8' />
+                    <rect id='path-8' stroke='#899199' stroke-width='2' fill='#FFFFFF' fill-rule='nonzero' mask='url(#mask-8)' x='0' y='0' width='69' height='8' rx='2' />
+                  </g>
                 </g>
-              </g>
-              <g id='Rectangle-5-Copy-4' transform='translate(10.000000, 115.000000)'>
-                <g id='path-10-Clipped'>
-                  <mask id='mask-10' fill='white'>
-                    <use href='#path-9' />
-                  </mask>
-                  <g id='path-10' />
-                  <rect id='path-10' stroke='#899199' stroke-width='2' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-10)' x='0' y='0' width='93' height='8' rx='2' />
+              </TweenOne>
+              <TweenOne component="g" animation={{ ...animate.x, delay: 1050 }}>
+                <g id='Rectangle-5-Copy-4' transform='translate(10.000000, 115.000000)'>
+                  <g id='path-10-Clipped'>
+                    <mask id='mask-10' fill='white'>
+                      <use href='#path-9' />
+                    </mask>
+                    <g id='path-10' />
+                    <rect id='path-10' stroke='#899199' stroke-width='2' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-10)' x='0' y='0' width='93' height='8' rx='2' />
+                  </g>
                 </g>
-              </g>
+              </TweenOne>
             </g>
             <g id='WorkHistoryContainer' transform='translate(178.000000, 305.000000)'>
               <g id='WorkHistory'>
@@ -335,77 +396,83 @@ export default function () {
                     </g>
                   </g>
                 </g>
-                <g id='Group-3' transform='translate(10.000000, 31.000000)'>
-                  <g id='Group-2-Copy' transform='translate(29.000000, 10.000000)'>
-                    <g id='Rectangle-12'>
-                      <g id='path-21-Clipped'>
-                        <mask id='mask-16' fill='white'>
-                          <use href='#path-15' />
-                        </mask>
-                        <g id='path-21' />
-                        <rect id='path-21' stroke='#899199' stroke-width='2' fill='#FFFFFF' fill-rule='nonzero' mask='url(#mask-16)' x='0' y='0' width='69' height='7' rx='1' />
+                <TweenOne component="g" animation={{ ...animate.alpha, y: 5, delay: 300 }}>
+                  <g id='Group-3' transform='translate(10.000000, 31.000000)'>
+                    <g id='Group-2-Copy' transform='translate(29.000000, 10.000000)'>
+                      <g id='Rectangle-12'>
+                        <g id='path-21-Clipped'>
+                          <mask id='mask-16' fill='white'>
+                            <use href='#path-15' />
+                          </mask>
+                          <g id='path-21' />
+                          <rect id='path-21' stroke='#899199' stroke-width='2' fill='#FFFFFF' fill-rule='nonzero' mask='url(#mask-16)' x='0' y='0' width='69' height='7' rx='1' />
+                        </g>
+                      </g>
+                      <g id='Rectangle-12-Copy' transform='translate(0.000000, 10.000000)'>
+                        <g id='path-23-Clipped'>
+                          <mask id='mask-18' fill='white'>
+                            <use href='#path-17' />
+                          </mask>
+                          <g id='path-23' />
+                          <rect id='path-23' stroke='#899199' stroke-width='2' fill='#FFFFFF' fill-rule='nonzero' mask='url(#mask-18)' x='0' y='0' width='69' height='7' rx='1' />
+                        </g>
                       </g>
                     </g>
-                    <g id='Rectangle-12-Copy' transform='translate(0.000000, 10.000000)'>
-                      <g id='path-23-Clipped'>
-                        <mask id='mask-18' fill='white'>
-                          <use href='#path-17' />
+                    <g id='Rectangle-5-Copy-3' transform='translate(0.000000, -0.000000)'>
+                      <g id='path-25-Clipped'>
+                        <mask id='mask-20' fill='white'>
+                          <use href='#path-19' />
                         </mask>
-                        <g id='path-23' />
-                        <rect id='path-23' stroke='#899199' stroke-width='2' fill='#FFFFFF' fill-rule='nonzero' mask='url(#mask-18)' x='0' y='0' width='69' height='7' rx='1' />
+                        <g id='path-25' />
+                        <rect id='path-25' stroke='#899199' stroke-width='2' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-20)' x='0' y='0' width='20' height='20' rx='3' />
                       </g>
                     </g>
                   </g>
-                  <g id='Rectangle-5-Copy-3' transform='translate(0.000000, -0.000000)'>
-                    <g id='path-25-Clipped'>
-                      <mask id='mask-20' fill='white'>
-                        <use href='#path-19' />
+                </TweenOne>
+                <TweenOne component="g" animation={{ ...animate.alpha, y: 10, delay: 900 }}>
+                  <g id='Group-3-Copy' transform='translate(10.000000, 103.000000)'>
+                    <g id='Group-2-Copy' transform='translate(29.000000, 2.000000)'>
+                      <g id='Rectangle-12'>
+                        <g id='path-27-Clipped'>
+                          <mask id='mask-22' fill='white'>
+                            <use href='#path-21' />
+                          </mask>
+                          <g id='path-27' />
+                          <rect id='path-27' stroke='#899199' stroke-width='2' fill='#FFFFFF' fill-rule='nonzero' mask='url(#mask-22)' x='0' y='0' width='69' height='7' rx='1' />
+                        </g>
+                      </g>
+                      <g id='Rectangle-12-Copy' transform='translate(0.000000, 10.000000)'>
+                        <g id='path-29-Clipped'>
+                          <mask id='mask-24' fill='white'>
+                            <use href='#path-23' />
+                          </mask>
+                          <g id='path-29' />
+                          <rect id='path-29' stroke='#899199' stroke-width='2' fill='#FFFFFF' fill-rule='nonzero' mask='url(#mask-24)' x='0' y='0' width='69' height='7' rx='1' />
+                        </g>
+                      </g>
+                    </g>
+                    <g id='Rectangle-5-Copy-3'>
+                      <g id='path-31-Clipped'>
+                        <mask id='mask-26' fill='white'>
+                          <use href='#path-25' />
+                        </mask>
+                        <g id='path-31' />
+                        <rect id='path-31' stroke='#899199' stroke-width='2' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-26)' x='0' y='0' width='20' height='20' rx='3' />
+                      </g>
+                    </g>
+                  </g>
+                </TweenOne>
+                <TweenOne component="g" animation={{ ...animate.alpha, y: 10, delay: 600 }}>
+                  <g id='Rectangle-5-Copy-2' transform='translate(10.000000, 68.000000)'>
+                    <g id='path-33-Clipped'>
+                      <mask id='mask-28' fill='white'>
+                        <use href='#path-27' />
                       </mask>
-                      <g id='path-25' />
-                      <rect id='path-25' stroke='#899199' stroke-width='2' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-20)' x='0' y='0' width='20' height='20' rx='3' />
+                      <g id='path-33' />
+                      <rect id='path-33' stroke='#85B27F' stroke-width='2' fill='#DEF5DB' fill-rule='nonzero' mask='url(#mask-28)' x='0' y='0' width='98' height='24' rx='3' />
                     </g>
                   </g>
-                </g>
-                <g id='Group-3-Copy' transform='translate(10.000000, 103.000000)'>
-                  <g id='Group-2-Copy' transform='translate(29.000000, 2.000000)'>
-                    <g id='Rectangle-12'>
-                      <g id='path-27-Clipped'>
-                        <mask id='mask-22' fill='white'>
-                          <use href='#path-21' />
-                        </mask>
-                        <g id='path-27' />
-                        <rect id='path-27' stroke='#899199' stroke-width='2' fill='#FFFFFF' fill-rule='nonzero' mask='url(#mask-22)' x='0' y='0' width='69' height='7' rx='1' />
-                      </g>
-                    </g>
-                    <g id='Rectangle-12-Copy' transform='translate(0.000000, 10.000000)'>
-                      <g id='path-29-Clipped'>
-                        <mask id='mask-24' fill='white'>
-                          <use href='#path-23' />
-                        </mask>
-                        <g id='path-29' />
-                        <rect id='path-29' stroke='#899199' stroke-width='2' fill='#FFFFFF' fill-rule='nonzero' mask='url(#mask-24)' x='0' y='0' width='69' height='7' rx='1' />
-                      </g>
-                    </g>
-                  </g>
-                  <g id='Rectangle-5-Copy-3'>
-                    <g id='path-31-Clipped'>
-                      <mask id='mask-26' fill='white'>
-                        <use href='#path-25' />
-                      </mask>
-                      <g id='path-31' />
-                      <rect id='path-31' stroke='#899199' stroke-width='2' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-26)' x='0' y='0' width='20' height='20' rx='3' />
-                    </g>
-                  </g>
-                </g>
-                <g id='Rectangle-5-Copy-2' transform='translate(10.000000, 68.000000)'>
-                  <g id='path-33-Clipped'>
-                    <mask id='mask-28' fill='white'>
-                      <use href='#path-27' />
-                    </mask>
-                    <g id='path-33' />
-                    <rect id='path-33' stroke='#85B27F' stroke-width='2' fill='#DEF5DB' fill-rule='nonzero' mask='url(#mask-28)' x='0' y='0' width='98' height='24' rx='3' />
-                  </g>
-                </g>
+                </TweenOne>
               </g>
             </g>
             <g id='PublishedWorksContainer' transform='translate(251.000000, 14.000000)'>
@@ -424,180 +491,186 @@ export default function () {
                     </g>
                   </g>
                 </g>
-                <g id='Group-5' transform='translate(8.000000, 22.000000)'>
-                  <g id='Rectangle-5'>
-                    <g id='path-40-Clipped'>
-                      <mask id='mask-32' fill='white'>
-                        <use href='#path-31' />
-                      </mask>
-                      <g id='path-40' />
-                      <rect id='path-40' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-32)' x='0' y='0' width='28' height='28' rx='3' />
+                <TweenOne component="g" animation={{ ...animate.alpha, y: 10, delay: 400 }}>
+                  <g id='Group-5' transform='translate(8.000000, 22.000000)'>
+                    <g id='Rectangle-5'>
+                      <g id='path-40-Clipped'>
+                        <mask id='mask-32' fill='white'>
+                          <use href='#path-31' />
+                        </mask>
+                        <g id='path-40' />
+                        <rect id='path-40' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-32)' x='0' y='0' width='28' height='28' rx='3' />
+                      </g>
+                    </g>
+                    <g id='Rectangle-12' transform='translate(0.000000, 32.000000)'>
+                      <g id='path-42-Clipped'>
+                        <mask id='mask-34' fill='white'>
+                          <use href='#path-33' />
+                        </mask>
+                        <g id='path-42' />
+                        <rect id='path-42' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-34)' x='0' y='0' width='28' height='5' rx='1' />
+                      </g>
+                    </g>
+                    <g id='Rectangle-12-Copy-2' transform='translate(0.000000, 41.000000)'>
+                      <g id='path-44-Clipped'>
+                        <mask id='mask-36' fill='white'>
+                          <use href='#path-35' />
+                        </mask>
+                        <g id='path-44' />
+                        <rect id='path-44' stroke='#83A9C5' fill='#AED6F3' fill-rule='nonzero' mask='url(#mask-36)' x='0' y='0' width='28' height='5' rx='1' />
+                      </g>
                     </g>
                   </g>
-                  <g id='Rectangle-12' transform='translate(0.000000, 32.000000)'>
-                    <g id='path-42-Clipped'>
-                      <mask id='mask-34' fill='white'>
-                        <use href='#path-33' />
-                      </mask>
-                      <g id='path-42' />
-                      <rect id='path-42' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-34)' x='0' y='0' width='28' height='5' rx='1' />
+                  <g id='Group-5-Copy-3' transform='translate(8.000000, 75.000000)'>
+                    <g id='Rectangle-5'>
+                      <g id='path-46-Clipped'>
+                        <mask id='mask-38' fill='white'>
+                          <use href='#path-37' />
+                        </mask>
+                        <g id='path-46' />
+                        <rect id='path-46' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-38)' x='0' y='0' width='28' height='28' rx='3' />
+                      </g>
+                    </g>
+                    <g id='Rectangle-12' transform='translate(0.000000, 32.000000)'>
+                      <g id='path-48-Clipped'>
+                        <mask id='mask-40' fill='white'>
+                          <use href='#path-39' />
+                        </mask>
+                        <g id='path-48' />
+                        <rect id='path-48' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-40)' x='0' y='0' width='28' height='5' rx='1' />
+                      </g>
+                    </g>
+                    <g id='Rectangle-12-Copy-2' transform='translate(0.000000, 41.000000)'>
+                      <g id='path-50-Clipped'>
+                        <mask id='mask-42' fill='white'>
+                          <use href='#path-41' />
+                        </mask>
+                        <g id='path-50' />
+                        <rect id='path-50' stroke='#83A9C5' fill='#AED6F3' fill-rule='nonzero' mask='url(#mask-42)' x='0' y='0' width='28' height='5' rx='1' />
+                      </g>
                     </g>
                   </g>
-                  <g id='Rectangle-12-Copy-2' transform='translate(0.000000, 41.000000)'>
-                    <g id='path-44-Clipped'>
-                      <mask id='mask-36' fill='white'>
-                        <use href='#path-35' />
-                      </mask>
-                      <g id='path-44' />
-                      <rect id='path-44' stroke='#83A9C5' fill='#AED6F3' fill-rule='nonzero' mask='url(#mask-36)' x='0' y='0' width='28' height='5' rx='1' />
+                </TweenOne>
+                <TweenOne component="g" animation={{ ...animate.alpha, y: 10, delay: 600 }}>
+                  <g id='Group-5-Copy' transform='translate(46.000000, 22.000000)'>
+                    <g id='Rectangle-5'>
+                      <g id='path-52-Clipped'>
+                        <mask id='mask-44' fill='white'>
+                          <use href='#path-43' />
+                        </mask>
+                        <g id='path-52' />
+                        <rect id='path-52' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-44)' x='0' y='0' width='28' height='28' rx='3' />
+                      </g>
+                    </g>
+                    <g id='Rectangle-12' transform='translate(0.000000, 32.000000)'>
+                      <g id='path-54-Clipped'>
+                        <mask id='mask-46' fill='white'>
+                          <use href='#path-45' />
+                        </mask>
+                        <g id='path-54' />
+                        <rect id='path-54' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-46)' x='0' y='0' width='28' height='5' rx='1' />
+                      </g>
+                    </g>
+                    <g id='Rectangle-12-Copy-2' transform='translate(0.000000, 41.000000)'>
+                      <g id='path-56-Clipped'>
+                        <mask id='mask-48' fill='white'>
+                          <use href='#path-47' />
+                        </mask>
+                        <g id='path-56' />
+                        <rect id='path-56' stroke='#83A9C5' fill='#AED6F3' fill-rule='nonzero' mask='url(#mask-48)' x='0' y='0' width='28' height='5' rx='1' />
+                      </g>
                     </g>
                   </g>
-                </g>
-                <g id='Group-5-Copy-3' transform='translate(8.000000, 75.000000)'>
-                  <g id='Rectangle-5'>
-                    <g id='path-46-Clipped'>
-                      <mask id='mask-38' fill='white'>
-                        <use href='#path-37' />
-                      </mask>
-                      <g id='path-46' />
-                      <rect id='path-46' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-38)' x='0' y='0' width='28' height='28' rx='3' />
+                  <g id='Group-5-Copy-4' transform='translate(46.000000, 75.000000)'>
+                    <g id='Rectangle-5'>
+                      <g id='path-58-Clipped'>
+                        <mask id='mask-50' fill='white'>
+                          <use href='#path-49' />
+                        </mask>
+                        <g id='path-58' />
+                        <rect id='path-58' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-50)' x='0' y='0' width='28' height='28' rx='3' />
+                      </g>
+                    </g>
+                    <g id='Rectangle-12' transform='translate(0.000000, 32.000000)'>
+                      <g id='path-60-Clipped'>
+                        <mask id='mask-52' fill='white'>
+                          <use href='#path-51' />
+                        </mask>
+                        <g id='path-60' />
+                        <rect id='path-60' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-52)' x='0' y='0' width='28' height='5' rx='1' />
+                      </g>
+                    </g>
+                    <g id='Rectangle-12-Copy-2' transform='translate(0.000000, 41.000000)'>
+                      <g id='path-62-Clipped'>
+                        <mask id='mask-54' fill='white'>
+                          <use href='#path-53' />
+                        </mask>
+                        <g id='path-62' />
+                        <rect id='path-62' stroke='#83A9C5' fill='#AED6F3' fill-rule='nonzero' mask='url(#mask-54)' x='0' y='0' width='28' height='5' rx='1' />
+                      </g>
                     </g>
                   </g>
-                  <g id='Rectangle-12' transform='translate(0.000000, 32.000000)'>
-                    <g id='path-48-Clipped'>
-                      <mask id='mask-40' fill='white'>
-                        <use href='#path-39' />
-                      </mask>
-                      <g id='path-48' />
-                      <rect id='path-48' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-40)' x='0' y='0' width='28' height='5' rx='1' />
+                </TweenOne>
+                <TweenOne component="g" animation={{ ...animate.alpha, y: 10, delay: 800 }}>
+                  <g id='Group-5-Copy-2' transform='translate(84.000000, 22.000000)'>
+                    <g id='Rectangle-5'>
+                      <g id='path-64-Clipped'>
+                        <mask id='mask-56' fill='white'>
+                          <use href='#path-55' />
+                        </mask>
+                        <g id='path-64' />
+                        <rect id='path-64' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-56)' x='0' y='0' width='28' height='28' rx='3' />
+                      </g>
+                    </g>
+                    <g id='Rectangle-12' transform='translate(0.000000, 32.000000)'>
+                      <g id='path-66-Clipped'>
+                        <mask id='mask-58' fill='white'>
+                          <use href='#path-57' />
+                        </mask>
+                        <g id='path-66' />
+                        <rect id='path-66' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-58)' x='0' y='0' width='28' height='5' rx='1' />
+                      </g>
+                    </g>
+                    <g id='Rectangle-12-Copy-2' transform='translate(0.000000, 41.000000)'>
+                      <g id='path-68-Clipped'>
+                        <mask id='mask-60' fill='white'>
+                          <use href='#path-59' />
+                        </mask>
+                        <g id='path-68' />
+                        <rect id='path-68' stroke='#83A9C5' fill='#AED6F3' fill-rule='nonzero' mask='url(#mask-60)' x='0' y='0' width='28' height='5' rx='1' />
+                      </g>
                     </g>
                   </g>
-                  <g id='Rectangle-12-Copy-2' transform='translate(0.000000, 41.000000)'>
-                    <g id='path-50-Clipped'>
-                      <mask id='mask-42' fill='white'>
-                        <use href='#path-41' />
-                      </mask>
-                      <g id='path-50' />
-                      <rect id='path-50' stroke='#83A9C5' fill='#AED6F3' fill-rule='nonzero' mask='url(#mask-42)' x='0' y='0' width='28' height='5' rx='1' />
+                  <g id='Group-5-Copy-5' transform='translate(84.000000, 75.000000)'>
+                    <g id='Rectangle-5'>
+                      <g id='path-70-Clipped'>
+                        <mask id='mask-62' fill='white'>
+                          <use href='#path-61' />
+                        </mask>
+                        <g id='path-70' />
+                        <rect id='path-70' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-62)' x='0' y='0' width='28' height='28' rx='3' />
+                      </g>
+                    </g>
+                    <g id='Rectangle-12' transform='translate(0.000000, 32.000000)'>
+                      <g id='path-72-Clipped'>
+                        <mask id='mask-64' fill='white'>
+                          <use href='#path-63' />
+                        </mask>
+                        <g id='path-72' />
+                        <rect id='path-72' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-64)' x='0' y='0' width='28' height='5' rx='1' />
+                      </g>
+                    </g>
+                    <g id='Rectangle-12-Copy-2' transform='translate(0.000000, 41.000000)'>
+                      <g id='path-74-Clipped'>
+                        <mask id='mask-66' fill='white'>
+                          <use href='#path-65' />
+                        </mask>
+                        <g id='path-74' />
+                        <rect id='path-74' stroke='#83A9C5' fill='#AED6F3' fill-rule='nonzero' mask='url(#mask-66)' x='0' y='0' width='28' height='5' rx='1' />
+                      </g>
                     </g>
                   </g>
-                </g>
-                <g id='Group-5-Copy' transform='translate(46.000000, 22.000000)'>
-                  <g id='Rectangle-5'>
-                    <g id='path-52-Clipped'>
-                      <mask id='mask-44' fill='white'>
-                        <use href='#path-43' />
-                      </mask>
-                      <g id='path-52' />
-                      <rect id='path-52' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-44)' x='0' y='0' width='28' height='28' rx='3' />
-                    </g>
-                  </g>
-                  <g id='Rectangle-12' transform='translate(0.000000, 32.000000)'>
-                    <g id='path-54-Clipped'>
-                      <mask id='mask-46' fill='white'>
-                        <use href='#path-45' />
-                      </mask>
-                      <g id='path-54' />
-                      <rect id='path-54' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-46)' x='0' y='0' width='28' height='5' rx='1' />
-                    </g>
-                  </g>
-                  <g id='Rectangle-12-Copy-2' transform='translate(0.000000, 41.000000)'>
-                    <g id='path-56-Clipped'>
-                      <mask id='mask-48' fill='white'>
-                        <use href='#path-47' />
-                      </mask>
-                      <g id='path-56' />
-                      <rect id='path-56' stroke='#83A9C5' fill='#AED6F3' fill-rule='nonzero' mask='url(#mask-48)' x='0' y='0' width='28' height='5' rx='1' />
-                    </g>
-                  </g>
-                </g>
-                <g id='Group-5-Copy-4' transform='translate(46.000000, 75.000000)'>
-                  <g id='Rectangle-5'>
-                    <g id='path-58-Clipped'>
-                      <mask id='mask-50' fill='white'>
-                        <use href='#path-49' />
-                      </mask>
-                      <g id='path-58' />
-                      <rect id='path-58' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-50)' x='0' y='0' width='28' height='28' rx='3' />
-                    </g>
-                  </g>
-                  <g id='Rectangle-12' transform='translate(0.000000, 32.000000)'>
-                    <g id='path-60-Clipped'>
-                      <mask id='mask-52' fill='white'>
-                        <use href='#path-51' />
-                      </mask>
-                      <g id='path-60' />
-                      <rect id='path-60' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-52)' x='0' y='0' width='28' height='5' rx='1' />
-                    </g>
-                  </g>
-                  <g id='Rectangle-12-Copy-2' transform='translate(0.000000, 41.000000)'>
-                    <g id='path-62-Clipped'>
-                      <mask id='mask-54' fill='white'>
-                        <use href='#path-53' />
-                      </mask>
-                      <g id='path-62' />
-                      <rect id='path-62' stroke='#83A9C5' fill='#AED6F3' fill-rule='nonzero' mask='url(#mask-54)' x='0' y='0' width='28' height='5' rx='1' />
-                    </g>
-                  </g>
-                </g>
-                <g id='Group-5-Copy-2' transform='translate(84.000000, 22.000000)'>
-                  <g id='Rectangle-5'>
-                    <g id='path-64-Clipped'>
-                      <mask id='mask-56' fill='white'>
-                        <use href='#path-55' />
-                      </mask>
-                      <g id='path-64' />
-                      <rect id='path-64' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-56)' x='0' y='0' width='28' height='28' rx='3' />
-                    </g>
-                  </g>
-                  <g id='Rectangle-12' transform='translate(0.000000, 32.000000)'>
-                    <g id='path-66-Clipped'>
-                      <mask id='mask-58' fill='white'>
-                        <use href='#path-57' />
-                      </mask>
-                      <g id='path-66' />
-                      <rect id='path-66' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-58)' x='0' y='0' width='28' height='5' rx='1' />
-                    </g>
-                  </g>
-                  <g id='Rectangle-12-Copy-2' transform='translate(0.000000, 41.000000)'>
-                    <g id='path-68-Clipped'>
-                      <mask id='mask-60' fill='white'>
-                        <use href='#path-59' />
-                      </mask>
-                      <g id='path-68' />
-                      <rect id='path-68' stroke='#83A9C5' fill='#AED6F3' fill-rule='nonzero' mask='url(#mask-60)' x='0' y='0' width='28' height='5' rx='1' />
-                    </g>
-                  </g>
-                </g>
-                <g id='Group-5-Copy-5' transform='translate(84.000000, 75.000000)'>
-                  <g id='Rectangle-5'>
-                    <g id='path-70-Clipped'>
-                      <mask id='mask-62' fill='white'>
-                        <use href='#path-61' />
-                      </mask>
-                      <g id='path-70' />
-                      <rect id='path-70' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-62)' x='0' y='0' width='28' height='28' rx='3' />
-                    </g>
-                  </g>
-                  <g id='Rectangle-12' transform='translate(0.000000, 32.000000)'>
-                    <g id='path-72-Clipped'>
-                      <mask id='mask-64' fill='white'>
-                        <use href='#path-63' />
-                      </mask>
-                      <g id='path-72' />
-                      <rect id='path-72' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-64)' x='0' y='0' width='28' height='5' rx='1' />
-                    </g>
-                  </g>
-                  <g id='Rectangle-12-Copy-2' transform='translate(0.000000, 41.000000)'>
-                    <g id='path-74-Clipped'>
-                      <mask id='mask-66' fill='white'>
-                        <use href='#path-65' />
-                      </mask>
-                      <g id='path-74' />
-                      <rect id='path-74' stroke='#83A9C5' fill='#AED6F3' fill-rule='nonzero' mask='url(#mask-66)' x='0' y='0' width='28' height='5' rx='1' />
-                    </g>
-                  </g>
-                </g>
+                </TweenOne>
               </g>
               <g id='Group-7' transform='translate(110.000000, 0.000000)'>
                 <g id='Oval-9'>
@@ -644,7 +717,9 @@ export default function () {
                         <use href='#path-73' />
                       </mask>
                       <g id='path-83' />
-                      <rect id='path-83' stroke='#74A285' fill='#C1F1D4' fill-rule='nonzero' mask='url(#mask-74)' x='0' y='0' width='103' height='46' rx='3' />
+                      <TweenOne component="g" animation={{ ...animate.alpha, y: 10, delay: 500 }}>
+                        <rect id='path-83' stroke='#74A285' fill='#C1F1D4' fill-rule='nonzero' mask='url(#mask-74)' x='0' y='0' width='103' height='46' rx='3' />
+                      </TweenOne>
                     </g>
                   </g>
                   <g id='Rectangle-12' transform='translate(6.000000, 48.000000)'>
@@ -706,51 +781,61 @@ export default function () {
                   </g>
                 </g>
                 <g id='Group-5' transform='translate(9.000000, 21.000000)'>
-                  <g id='Rectangle-12-Copy-2'>
-                    <g id='path-94-Clipped'>
-                      <mask id='mask-86' fill='white'>
-                        <use href='#path-85' />
-                      </mask>
-                      <g id='path-94' />
-                      <rect id='path-94' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-86)' x='0' y='0' width='103' height='12' rx='3' />
+                  <TweenOne component="g" animation={{ ...animate.x, delay: 450 }}>
+                    <g id='Rectangle-12-Copy-2'>
+                      <g id='path-94-Clipped'>
+                        <mask id='mask-86' fill='white'>
+                          <use href='#path-85' />
+                        </mask>
+                        <g id='path-94' />
+                        <rect id='path-94' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-86)' x='0' y='0' width='103' height='12' rx='3' />
+                      </g>
                     </g>
-                  </g>
-                  <g id='Rectangle-12-Copy-7' transform='translate(0.000000, 84.000000)'>
-                    <g id='path-96-Clipped'>
-                      <mask id='mask-88' fill='white'>
-                        <use href='#path-87' />
-                      </mask>
-                      <g id='path-96' />
-                      <rect id='path-96' stroke='#899199' fill='#FFFFFF' fill-rule='nonzero' mask='url(#mask-88)' x='0' y='0' width='84' height='8' rx='2' />
+                  </TweenOne>
+                  <TweenOne component="g" animation={{ ...animate.x, delay: 1050 }}>
+                    <g id='Rectangle-12-Copy-7' transform='translate(0.000000, 84.000000)'>
+                      <g id='path-96-Clipped'>
+                        <mask id='mask-88' fill='white'>
+                          <use href='#path-87' />
+                        </mask>
+                        <g id='path-96' />
+                        <rect id='path-96' stroke='#899199' fill='#FFFFFF' fill-rule='nonzero' mask='url(#mask-88)' x='0' y='0' width='84' height='8' rx='2' />
+                      </g>
                     </g>
-                  </g>
-                  <g id='Rectangle-12-Copy-8' transform='translate(0.000000, 97.000000)'>
-                    <g id='path-98-Clipped'>
-                      <mask id='mask-90' fill='white'>
-                        <use href='#path-89' />
-                      </mask>
-                      <g id='path-98' />
-                      <rect id='path-98' stroke='#DDC488' fill='#FFF2C2' fill-rule='nonzero' mask='url(#mask-90)' x='0' y='0' width='84' height='8' rx='2' />
+                  </TweenOne>
+                  <TweenOne component="g" animation={{ ...animate.x, delay: 1050 }}>
+                    <g id='Rectangle-12-Copy-8' transform='translate(0.000000, 97.000000)'>
+                      <g id='path-98-Clipped'>
+                        <mask id='mask-90' fill='white'>
+                          <use href='#path-89' />
+                        </mask>
+                        <g id='path-98' />
+                        <rect id='path-98' stroke='#DDC488' fill='#FFF2C2' fill-rule='nonzero' mask='url(#mask-90)' x='0' y='0' width='84' height='8' rx='2' />
+                      </g>
                     </g>
-                  </g>
-                  <g id='Rectangle-12-Copy-5' transform='translate(0.000000, 17.000000)'>
-                    <g id='path-100-Clipped'>
-                      <mask id='mask-92' fill='white'>
-                        <use href='#path-91' />
-                      </mask>
-                      <g id='path-100' />
-                      <rect id='path-100' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-92)' x='0' y='0' width='45' height='60' rx='3' />
+                  </TweenOne>
+                  <TweenOne component="g" animation={{ ...animate.x, delay: 650 }}>
+                    <g id='Rectangle-12-Copy-5' transform='translate(0.000000, 17.000000)'>
+                      <g id='path-100-Clipped'>
+                        <mask id='mask-92' fill='white'>
+                          <use href='#path-91' />
+                        </mask>
+                        <g id='path-100' />
+                        <rect id='path-100' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-92)' x='0' y='0' width='45' height='60' rx='3' />
+                      </g>
                     </g>
-                  </g>
-                  <g id='Rectangle-12-Copy-6' transform='translate(52.000000, 17.000000)'>
-                    <g id='path-102-Clipped'>
-                      <mask id='mask-94' fill='white'>
-                        <use href='#path-93' />
-                      </mask>
-                      <g id='path-102' />
-                      <rect id='path-102' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-94)' x='0' y='0' width='51' height='60' rx='3' />
+                  </TweenOne>
+                  <TweenOne component="g" animation={{ ...animate.x, delay: 850 }}>
+                    <g id='Rectangle-12-Copy-6' transform='translate(52.000000, 17.000000)'>
+                      <g id='path-102-Clipped'>
+                        <mask id='mask-94' fill='white'>
+                          <use href='#path-93' />
+                        </mask>
+                        <g id='path-102' />
+                        <rect id='path-102' stroke='#899199' fill='#F1F5F7' fill-rule='nonzero' mask='url(#mask-94)' x='0' y='0' width='51' height='60' rx='3' />
+                      </g>
                     </g>
-                  </g>
+                  </TweenOne>
                 </g>
               </g>
             </g>
