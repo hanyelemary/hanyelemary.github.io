@@ -55,7 +55,7 @@ const animate = {
 
 export default function () {
   return (
-    <svg width='500px' height='400px' max-width='100%' viewBox='0 0 750 510' version='1.1' xmlns='http://www.w3.org/2000/svg' xlink='http://www.w3.org/1999/xlink'>
+    <svg width='650px' height='500px' max-width='100%' viewBox='0 0 750 510' version='1.1' xmlns='http://www.w3.org/2000/svg' xlink='http://www.w3.org/1999/xlink'>
       <title>Hany Elemary</title>
       <desc>Profile</desc>
       <defs>
