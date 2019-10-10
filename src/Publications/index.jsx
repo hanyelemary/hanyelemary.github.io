@@ -9,7 +9,7 @@ import './publications.less'
 const { Meta } = Card
 
 const Publication = ({ data, index }) => (
-  <Col span={12} className='col' key={index.toString()}>
+  <Col span={12} md={24} lg={12} sm={24} xs={24} className='col' key={index.toString()}>
     <QueueAnim
       type='bottom'
       className='home-hover'
