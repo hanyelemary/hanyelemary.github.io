@@ -5,6 +5,7 @@ import { Row, Col, Card, Avatar } from 'antd'
 import { publicationData } from './data'
 
 import './publications.less'
+import './responsive.less'
 
 const { Meta } = Card
 
