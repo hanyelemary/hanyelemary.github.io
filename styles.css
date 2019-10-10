@@ -8286,17 +8286,6 @@ svg g {
 .home-banner-image {
   display: none;
 }
-.title-line-wrapper {
-  height: 2px;
-  width: 100%;
-  overflow: hidden;
-}
-.title-line-wrapper .title-line {
-  height: 100%;
-  width: 64px;
-  transform: translateX(-64px);
-  background: linear-gradient(to right, rgba(24, 144, 255, 0) 0%, #1890ff 100%);
-}
 
 /* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
 /* stylelint-disable no-duplicate-selectors */
