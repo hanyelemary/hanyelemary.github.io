@@ -39,7 +39,7 @@ class Home extends React.PureComponent {
           <Header isMobile={this.state.isMobile} />
           <div className='home-wrapper'>
             <Banner isMobile={this.state.isMobile} />
-            <Publications key='page3' />
+            <Publications />
           </div>
           <Footer />
         </div>
