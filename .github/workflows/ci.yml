@@ -13,8 +13,11 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '10.16.3'
-      - name: install dependencies
+      - name: Install dependencies
         run: npm install
-      - name: lint
-        run: npm run build
-        
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build and Publish
+        run: npm run build-prod

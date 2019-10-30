@@ -55,6 +55,7 @@
   "scripts": {
     "build": "webpack -d --mode development",
     "preprod": "npm run lint && webpack -d --mode production",
+    "build-prod": "webpack -d --mode production",
     "lint": "standard --fix --vebose | snazzy"
   },
   "standard": {
