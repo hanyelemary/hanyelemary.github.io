@@ -4,7 +4,7 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-![Continuous Integration](https://github.com/hanyelemary/hanyelemary.github.io/workflows/.github/workflows/ci.yml/badge.svg)
+![](https://github.com/hanyelemary/hanyelemary.github.io/workflows/ci/badge.svg)
 
 
 ## Getting started
