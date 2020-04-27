@@ -11,7 +11,7 @@
     "index": "./index.js"
   },
   "dependencies": {
-    "antd": "^3.24.3",
+    "antd": "^4.1.5",
     "classnames": "^2.2.6",
     "enquire-js": "^0.2.1",
     "prop-types": "^15.7.2",
