@@ -1,5 +1,6 @@
 import React from 'react'
 import { Row, Col, Menu } from 'antd'
+import { GithubFilled } from '@ant-design/icons'
 import PhoneNav from './PhoneNav'
 
 import { enquireScreen } from 'enquire-js'
@@ -36,6 +37,11 @@ class Header extends React.Component {
         </Menu.Item>
         <Menu.Item key='blog'>
           <a href='http://hanyelemary.com' title='Blog'><span>Blog</span></a>
+        </Menu.Item>
+        <Menu.Item>
+          <a href='https://github.com/hanyelemary/hanyelemary.github.io' title='Github repository for this website'>
+            <GithubFilled style={{marginRight: '0', fontSize: '18px'}} />
+          </a>
         </Menu.Item>
       </Menu>
     )
