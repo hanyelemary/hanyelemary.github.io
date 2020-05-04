@@ -40,7 +40,7 @@ class Header extends React.Component {
         </Menu.Item>
         <Menu.Item>
           <a href='https://github.com/hanyelemary/hanyelemary.github.io' title='Github repository for this website'>
-            <GithubFilled style={{marginRight: '0', fontSize: '18px'}} />
+            <GithubFilled style={{ marginRight: '0', fontSize: '18px' }} />
           </a>
         </Menu.Item>
       </Menu>
