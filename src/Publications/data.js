@@ -6,7 +6,7 @@ import {
   YoutubeOutlined,
   DotChartOutlined,
   MobileOutlined
-} from '@ant-design/icons';
+} from '@ant-design/icons'
 
 export const publicationData = [{
   date: '4-26-2020',

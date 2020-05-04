@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import QueueAnim from 'rc-queue-anim'
 import TweenOne from 'rc-tween-one'
-import { Icon } from 'antd'
+import { GithubFilled, LinkedinFilled, TwitterSquareFilled } from '@ant-design/icons'
 import BannerSVG from './BannerSVG'
 
 function Banner (props) {
@@ -21,13 +21,13 @@ function Banner (props) {
         </p>
         <div key='button' className='button-wrapper'>
           <a href='http://github.com/hanyelemary' title="Hany's Github Profile" target='_blank' rel='noopener noreferrer'>
-            <Icon type='github' style={{ fontSize: '4em', color: '#333' }} theme='filled' />
+            <GithubFilled style={{ fontSize: '4em', color: '#333' }} />
           </a>
           <a href='https://www.linkedin.com/in/hanyelemary/' title="Hany's LinkedIn Profile" target='_blank' rel='noopener noreferrer'>
-            <Icon type='linkedin' style={{ fontSize: '4em', marginLeft: '18px', color: '#333' }} theme='filled' />
+            <LinkedinFilled style={{ fontSize: '4em', marginLeft: '18px', color: '#333' }} />
           </a>
           <a href='https://twitter.com/hanyelemary' title="Hany's Twitter Page" target='_blank' rel='noopener noreferrer'>
-            <Icon type='twitter' style={{ fontSize: '4em', marginLeft: '18px', color: '#333' }} />
+            <TwitterSquareFilled style={{ fontSize: '4em', marginLeft: '18px', color: '#333' }} />
           </a>
         </div>
       </QueueAnim>
