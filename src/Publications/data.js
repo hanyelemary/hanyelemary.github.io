@@ -22,7 +22,7 @@ export const publicationData = [{
   ],
   content: [
     <p>
-        A common assumption with Pair Programming is that it lessens the need for Code Reviews since it serves as a review on-the-go. This assumption often conflates the goals of Pair Programming and Code Reviews. In this article, I examine the dynamics between Pairing and Code Reviews.
+        A common assumption with Pair Programming is that it lessens the need for Code Reviews since it serves as a review on-the-go. This assumption often conflates the goals of Pair Programming and Code Reviews. In this article, I examine the dynamics between Pairing and Code Reviews...
     </p>
   ]
 },
@@ -40,7 +40,7 @@ export const publicationData = [{
   ],
   content: [
     <p>
-        With closures and states’ “shelter-in-place” orders, working from home is the only option. This can be extremely limiting and frustrating. But there’s also some things to be gained in this unfortunate situation.
+        With closures and states’ “shelter-in-place” orders, working from home is the only option. This can be extremely limiting and frustrating. But there’s also some things to be gained in this unfortunate situation...
     </p>
   ]
 },
@@ -60,7 +60,7 @@ export const publicationData = [{
   ],
   content: [
     <p>
-        We developed a Decisioning & Analytics platform to tackle credit card fraud to improve ML models accuracy and increase production deployment frequency.
+        We developed a Decisioning & Analytics platform to tackle credit card fraud to improve ML models accuracy and increase production deployment frequency...
     </p>
   ]
 },
@@ -78,7 +78,7 @@ export const publicationData = [{
   ],
   content: [
     <p>
-      The LiveLessons quickly get you up-to-speed on when to build isomorphic applications, how to effectively test your React and Redux code, and how to confidently refactor code while ensuring that business functionality is maintained.
+      The LiveLessons quickly get you up-to-speed on when to build isomorphic applications, how to effectively test your React and Redux code, and how to confidently refactor code while ensuring that business functionality is maintained...
     </p>
   ]
 },
@@ -95,7 +95,7 @@ export const publicationData = [{
   ],
   content: [
     <p>
-        As a software engineer, watching an accessibility test can humble you pretty quickly. In this session, we will discuss our humbling experience with accessibility at OCLC while working on WorldCat.org and WorldCat for local institutions.
+        As a software engineer, watching an accessibility test can humble you pretty quickly. In this session, we will discuss our humbling experience with accessibility at OCLC while working on WorldCat.org and WorldCat for local institutions...
     </p>
   ]
 },
@@ -114,7 +114,7 @@ export const publicationData = [{
   ],
   content: [
     <p>
-        The presentation will mostly focus on implementing mission-critical Web interfaces for desktop, tablet, and mobile devices using HTML5 and CSS3 to meet the core principles of our business: performance and accessibility
+        The presentation will mostly focus on implementing mission-critical Web interfaces for desktop, tablet, and mobile devices using HTML5 and CSS3 to meet the core principles of our business: performance and accessibility...
     </p>
   ]
 }
