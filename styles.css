@@ -11121,7 +11121,7 @@ svg g {
   transform-box: fill-box;
 }
 .banner-wrapper {
-  height: 500px;
+  height: 550px;
   width: 100%;
   max-width: 1500px;
   margin: auto;
@@ -11395,8 +11395,10 @@ svg g {
     display: none;
   }
   .banner-wrapper {
-    height: calc(100vh - 64px);
+    height: calc(100vh - 200px);
     overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .banner-wrapper .banner-title-wrapper,
   .banner-wrapper .banner-image-wrapper {
