@@ -22,15 +22,13 @@ jobs:
       - name: Build
         run: npm run build-prod
 
-  publish:
-    runs-on: ubuntu-latest
-    steps:
-      uses: EndBug/add-and-commit@v4.2.0
-        with:
-          author_name: Hany Elemary
-          author_email: hany.elemary@gmail.com
-          message: 'publish minified bundle'
-          force: true
+      - name: Publish
+        uses: EndBug/add-and-commit@v4.2.0
+          with:
+            author_name: Hany Elemary
+            author_email: hany.elemary@gmail.com
+            message: 'publish minified bundle'
+            force: true
 
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
