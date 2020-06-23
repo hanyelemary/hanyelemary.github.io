@@ -17,7 +17,7 @@ function Banner (props) {
         </div>
         <h1 key='h1'>Hi, I'm Hany</h1>
         <p key='content'>
-          I'm a Software Developer and Consultant. My passion is solving challenging business problems with clean, testable design and architecture.
+          I'm a Technical Leader, Developer, Author and Speaker. I solve challenging business problems through core engineering principles and product thinking, while fostering strong technical teams.
         </p>
         <div key='button' className='button-wrapper'>
           <a href='http://github.com/hanyelemary' title="Hany's Github Profile" target='_blank' rel='noopener noreferrer'>

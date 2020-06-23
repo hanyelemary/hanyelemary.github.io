@@ -6602,6 +6602,7 @@ html {
   position: absolute;
   z-index: 1050;
   border-radius: 2px;
+  box-shadow: none;
 }
 .ant-menu-submenu-popup::before {
   position: absolute;
@@ -7458,7 +7459,7 @@ html {
 }
 .ant-popover-message > .anticon {
   position: absolute;
-  top: 8px;
+  top: 8.0005px;
   color: #faad14;
   font-size: 14px;
 }
@@ -7584,6 +7585,7 @@ html {
 /* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
 #header {
   background-color: #fff;
+  box-shadow: 0 8px 24px -2px rgba(0, 0, 0, 0.05);
   position: relative;
   z-index: 10;
   height: 64px;
@@ -7936,7 +7938,7 @@ footer .bottom-bar a:hover {
   display: block;
   min-width: 32px;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 1.5715;
   cursor: pointer;
 }
 .ant-card-actions > li > span:hover {
@@ -10001,6 +10003,7 @@ footer .bottom-bar a:hover {
   padding: 2.4px 0;
   font-size: 16px;
   border-radius: 2px;
+  vertical-align: -0.5px;
 }
 .ant-btn-icon-only > * {
   font-size: 16px;
@@ -10024,9 +10027,6 @@ footer .bottom-bar a:hover {
 }
 .ant-btn-icon-only.ant-btn-sm > * {
   font-size: 14px;
-}
-.ant-btn-icon-only > i {
-  vertical-align: middle;
 }
 .ant-btn-round {
   height: 32px;
@@ -10099,10 +10099,11 @@ footer .bottom-bar a:hover {
   display: block;
 }
 .ant-btn > .ant-btn-loading-icon {
+  padding-right: 8px;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.ant-btn > .ant-btn-loading-icon .anticon {
-  padding-right: 8px;
+.ant-btn > .ant-btn-loading-icon:only-child {
+  padding-right: 0;
 }
 .ant-btn-group {
   position: relative;
@@ -10934,7 +10935,7 @@ a.ant-btn-sm {
 
 .publications {
   padding-top: 40px;
-  background-color: #f0f2f5;
+  background-color: #ffffff;
   min-height: 788px;
 }
 .publications .publications-title {
@@ -11125,6 +11126,7 @@ svg g {
   max-width: 1500px;
   margin: auto;
   position: relative;
+  background-color: #f0f2f5;
 }
 .banner-wrapper .banner-title-wrapper {
   width: 40%;
@@ -11393,7 +11395,6 @@ svg g {
     display: none;
   }
   .banner-wrapper {
-    width: 80%;
     height: calc(100vh - 64px);
     overflow: hidden;
   }
