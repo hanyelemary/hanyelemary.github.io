@@ -1,4 +1,4 @@
-name: CI
+name: CI/CD
 
 on: [push]
 
@@ -22,7 +22,8 @@ jobs:
       - name: Build
         run: npm run build-prod
 
-      - name: Publish
+  publish:
+    steps:
         uses: EndBug/add-and-commit@v4.2.0
         with:
           author_name: Hany Elemary
