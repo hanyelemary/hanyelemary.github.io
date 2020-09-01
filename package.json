@@ -10,8 +10,8 @@
     "index": "./index.js"
   },
   "dependencies": {
-    "@ant-design/icons": "^4.1.0",
-    "antd": "^4.2.0",
+    "@ant-design/icons": "^4.2.2",
+    "antd": "^4.6.2",
     "classnames": "^2.2.6",
     "enquire-js": "^0.2.1",
     "prop-types": "^15.7.2",
