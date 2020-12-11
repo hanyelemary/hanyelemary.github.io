@@ -7,6 +7,7 @@ import Footer from './Layout/Footer'
 import Banner from './Home/Banner'
 import Publications from './Publications'
 import WorkHistory from './WorkHistory'
+import Projects from './Projects'
 
 import './Home/home.less'
 import './Home/responsive.less'
@@ -41,6 +42,7 @@ class Home extends React.PureComponent {
           <div className='home-wrapper'>
             <Banner isMobile={this.state.isMobile} />
             <Publications />
+            <Projects />
             <WorkHistory isMobile={this.state.isMobile} />
           </div>
           <Footer />
