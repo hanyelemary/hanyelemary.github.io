@@ -13,7 +13,7 @@ const Project = ({ projectDetails, index }) => (
       <p key='content'>{projectDetails.content}</p>
     </div>
     <TweenOne animation={{ opacity: 1 }} className='banner-image-wrapper'>
-      <Image src={projectDetails.imageSrc} />
+      <Image src={projectDetails.imageSrc} alt={projectDetails.imageDescription} />
     </TweenOne>
   </div>
 )
