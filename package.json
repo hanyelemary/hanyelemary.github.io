@@ -36,6 +36,8 @@
     "css-loader": "^3.6.0",
     "eslint": "^6.8.0",
     "html-webpack-plugin": "^3.2.0",
+    "imagemin": "^7.0.1",
+    "imagemin-cli": "^6.0.0",
     "less": "^3.12.2",
     "less-loader": "^5.0.0",
     "mini-css-extract-plugin": "^0.9.0",
@@ -49,10 +51,11 @@
     "lint"
   ],
   "scripts": {
-    "build": "webpack -d --mode development",
-    "preprod": "npm run lint && webpack -d --mode production",
+    "build": "npm run lint && npm run imagemin && webpack -d --mode development",
+    "preprod": "npm run lint && npm run imagemin && webpack -d --mode production",
     "build-prod": "webpack -d --mode production",
-    "lint": "standard --fix --vebose | snazzy"
+    "lint": "standard --fix --vebose | snazzy",
+    "imagemin": "imagemin ./static/images/** --out-dir=./static/images/"
   },
   "standard": {
     "parser": "babel-eslint",
