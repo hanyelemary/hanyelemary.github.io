@@ -10,18 +10,18 @@
     "index": "./index.js"
   },
   "dependencies": {
-    "@ant-design/icons": "^4.2.2",
-    "antd": "^4.6.2",
+    "@ant-design/icons": "^4.3.0",
+    "antd": "^4.9.2",
     "classnames": "^2.2.6",
     "enquire-js": "^0.2.1",
     "prop-types": "^15.7.2",
     "rc-queue-anim": "^1.8.4",
     "rc-scroll-anim": "^2.7.4",
     "rc-tween-one": "^2.6.8",
-    "react": "^16.13.1",
+    "react": "^16.14.0",
     "react-document-title": "^2.0.3",
-    "react-dom": "^16.13.1",
-    "react-hot-loader": "^4.12.21"
+    "react-dom": "^16.14.0",
+    "react-hot-loader": "^4.13.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
