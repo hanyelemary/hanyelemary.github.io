@@ -1,7 +1,7 @@
 {
   "name": "hanyelemary.github.io",
-  "description": "Hany Elemary - Profile Page",
-  "homepage": "https://hanyelemary.github.io",
+  "description": "Hany Elemary - Personal Website",
+  "homepage": "http://hanyelemary.com/",
   "author": {
     "name": "Hany Elemary",
     "url": "http://hanyelemary.com/"
@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.3.0",
-    "antd": "^4.9.2",
+    "antd": "^4.15.0",
     "classnames": "^2.2.6",
     "enquire-js": "^0.2.1",
     "prop-types": "^15.7.2",
