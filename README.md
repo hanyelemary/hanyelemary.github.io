@@ -1,9 +1,8 @@
 # Profile page - Hany Elemary
-> Github page for Hany Elemary [https://hanyelemary.github.io/](https://hanyelemary.github.io/)
+> [https://hanyelemary.com/](https://hanyelemary.com/)
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-
 ![](https://github.com/hanyelemary/hanyelemary.github.io/workflows/CI/badge.svg)
 
 

@@ -36,7 +36,7 @@ class Home extends React.PureComponent {
 
   render () {
     return (
-      <DocumentTitle title='Hany Elemary - Github Page'>
+      <DocumentTitle title='Hany Elemary - Personal Website'>
         <div>
           <Header isMobile={this.state.isMobile} />
           <div className='home-wrapper'>
