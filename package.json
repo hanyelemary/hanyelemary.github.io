@@ -33,27 +33,27 @@
     "babel-plugin-import": "^1.13.3",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-runtime": "^6.26.0",
-    "css-loader": "^3.6.0",
+    "css-loader": "^5.2.0",
     "eslint": "^6.8.0",
-    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-plugin": "^5.3.1",
     "imagemin": "^7.0.1",
     "imagemin-cli": "^6.0.0",
-    "less": "^3.12.2",
-    "less-loader": "^5.0.0",
-    "mini-css-extract-plugin": "^0.9.0",
+    "less": "^4.1.1",
+    "less-loader": "^8.0.0",
+    "mini-css-extract-plugin": "^1.4.0",
     "pre-commit": "^1.2.2",
     "snazzy": "^8.0.0",
     "standard": "^13.0.0",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12"
+    "webpack": "^5.30.0",
+    "webpack-cli": "^4.6.0"
   },
   "pre-commit": [
     "lint"
   ],
   "scripts": {
-    "build": "npm run lint && npm run imagemin && webpack -d --mode development",
-    "preprod": "npm run lint && npm run imagemin && webpack -d --mode production",
-    "build-prod": "webpack -d --mode production",
+    "build": "npm run lint && npm run imagemin && webpack --mode development",
+    "prod": "npm run lint && npm run imagemin && webpack --mode production",
+    "dry-run": "webpack --mode production",
     "lint": "standard --fix --vebose | snazzy",
     "imagemin": "imagemin ./static/images/** --out-dir=./static/images/"
   },

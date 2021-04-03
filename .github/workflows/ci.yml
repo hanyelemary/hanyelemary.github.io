@@ -20,7 +20,7 @@ jobs:
         run: npm run lint
 
       - name: Build
-        run: npm run build-prod
+        run: npm run prod
 
       - name: Publish
         uses: EndBug/add-and-commit@v4.2.0

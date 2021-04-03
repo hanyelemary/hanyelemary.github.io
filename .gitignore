@@ -3,3 +3,4 @@ node_modules
 .vscode
 bundle.js
 styles.css
+bundle.js.LICENSE.txt

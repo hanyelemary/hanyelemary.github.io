@@ -4,14 +4,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const config = {
-  entry: './index.js',
   output: {
     path: path.resolve(__dirname, './'),
     filename: 'bundle.js'
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './template/index.html'
+      template: path.resolve(__dirname, 'template', 'index.html')
     }),
     new MiniCssExtractPlugin({
       filename: 'styles.css',
@@ -19,35 +18,32 @@ const config = {
     })
   ],
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.(js|jsx)$/,
         use: 'babel-loader',
-        exclude: /node_modules/
+        exclude: [path.join(__dirname, '../node_modules')]
+    }, 
+    {
+      test: /\.(css|less)$/i,
+      use: [{
+        loader: MiniCssExtractPlugin.loader
       },
       {
-        test: /\.less$/,
-        use: [{
-          loader: MiniCssExtractPlugin.loader,
-          options: {
-            hmr: process.env.NODE_ENV === 'development'
-          }
-        },
-        {
-          loader: 'css-loader',
-          options: {
-            sourceMap: true
-          }
-        },
-        {
-          loader: 'less-loader',
-          options: {
+        loader: 'css-loader',
+        options: {
+          sourceMap: true
+        }
+      },        
+      {
+        loader: "less-loader",
+        options: {
+          lessOptions: {
             javascriptEnabled: true,
             sourceMap: true
           }
-        }]
-      }
-    ]
+        }
+      }]
+    }]
   },
   resolve: {
     extensions: [
@@ -55,9 +51,9 @@ const config = {
       '.jsx'
     ]
   },
-  devServer: {
+    devServer: {
     contentBase: './'
   }
 }
-
+  
 module.exports = config
