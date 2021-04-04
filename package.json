@@ -34,6 +34,7 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-runtime": "^6.26.0",
     "css-loader": "^5.2.0",
+    "css-minimizer-webpack-plugin": "^1.3.0",
     "eslint": "^6.8.0",
     "html-webpack-plugin": "^5.3.1",
     "imagemin": "^7.0.1",
@@ -44,6 +45,7 @@
     "pre-commit": "^1.2.2",
     "snazzy": "^8.0.0",
     "standard": "^13.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^5.30.0",
     "webpack-cli": "^4.6.0"
   },
@@ -53,7 +55,6 @@
   "scripts": {
     "build": "npm run lint && npm run imagemin && webpack --mode development",
     "prod": "npm run lint && npm run imagemin && webpack --mode production",
-    "dry-run": "webpack --mode production",
     "lint": "standard --fix --vebose | snazzy",
     "imagemin": "imagemin ./static/images/** --out-dir=./static/images/"
   },
