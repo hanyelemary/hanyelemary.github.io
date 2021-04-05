@@ -10,7 +10,21 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'template', 'index.html')
+      inject: true,
+      template: path.resolve(__dirname, 'template', 'index.html'),
+      favicon: path.resolve(__dirname, './favicon.ico'),
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeRedundantAttributes: true,
+        useShortDoctype: true,
+        removeEmptyAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        keepClosingSlash: true,
+        minifyJS: true,
+        minifyCSS: true,
+        minifyURLs: true
+      }
     }),
     new MiniCssExtractPlugin({
       filename: 'styles.css',
@@ -47,7 +61,7 @@ const config = {
       '.jsx'
     ]
   },
-    devServer: {
+  devServer: {
     contentBase: './'
   }
 }
