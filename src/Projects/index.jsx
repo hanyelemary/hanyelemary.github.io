@@ -1,6 +1,7 @@
 import React from 'react'
-import { Carousel, Image, Tag } from 'antd'
+import { Carousel, Tag } from 'antd'
 import TweenOne from 'rc-tween-one'
+import Image from 'react-image-webp'
 
 import { projects } from './data'
 import './projects.less'
@@ -13,7 +14,12 @@ const Project = ({ projectDetails, index }) => (
       <p key='content'>{projectDetails.content}</p>
     </div>
     <TweenOne animation={{ opacity: 1 }} className='banner-image-wrapper'>
-      <Image src={projectDetails.imageSrc} alt={projectDetails.imageDescription} />
+      <Image
+        src={projectDetails.imageSrc}
+        webp={projectDetails.webpImageSrc}
+        alt={projectDetails.imageDescription}
+        className='webp-image'
+      />
     </TweenOne>
   </div>
 )

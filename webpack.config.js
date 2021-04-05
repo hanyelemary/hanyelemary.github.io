@@ -2,8 +2,6 @@ const webpack = require('webpack')
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 
 const config = {
   output: {
@@ -42,12 +40,6 @@ const config = {
         }
       }]
     }]
-  },
-  optimization: {
-    minimizer: [
-      new UglifyJsPlugin(),
-      new CssMinimizerPlugin()
-    ],
   },
   resolve: {
     extensions: [
