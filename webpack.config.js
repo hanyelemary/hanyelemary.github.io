@@ -6,14 +6,14 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const config = {
   output: {
     path: path.resolve(__dirname, './'),
-    filename: 'bundle.js'
+    filename: 'app.js'
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'template', 'index.html')
     }),
     new MiniCssExtractPlugin({
-      filename: 'styles.css',
+      filename: 'app.css',
       ignoreOrder: false // Enable to remove warnings about conflicting order
     })
   ],
