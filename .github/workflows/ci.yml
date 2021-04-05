@@ -23,12 +23,12 @@ jobs:
         run: npm run prod
 
       - name: Publish
-        uses: EndBug/add-and-commit@v4.2.0
+        uses: EndBug/add-and-commit@v7
         with:
           author_name: Hany Elemary
           author_email: hany.elemary@gmail.com
           message: 'publish minified bundle'
-          add: "bundle.js"
+          add: "bundle.js styles.css index.html"
           force: true
 
         env:
