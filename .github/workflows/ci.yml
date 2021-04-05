@@ -28,7 +28,7 @@ jobs:
           author_name: Hany Elemary
           author_email: hany.elemary@gmail.com
           message: 'publish minified bundle'
-          add: "."
+          add: "*.*"
           force: true
 
         env:
