@@ -23,7 +23,7 @@ jobs:
         run: npm run prod
 
       - name: Publish
-        uses: EndBug/add-and-commit@v7
+        uses: EndBug/add-and-commit@v4.2.0
         with:
           author_name: Hany Elemary
           author_email: hany.elemary@gmail.com
