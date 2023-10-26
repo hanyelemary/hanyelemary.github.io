@@ -1,9 +1,15 @@
 const data = {
   timeline: [{
+    src: './static/images/navalia-logo.svg',
+    time: 'August 2021 - Present',
+    title: 'Co-Founder/CTO',
+    content: ''
+  },
+  {
     src: './static/images/tw-logo.svg',
-    time: 'Nov 2015 - Current',
+    time: 'Nov 2015 - July 2021',
     title: 'Lead Consultant/Engineer',
-    content: 'ThoughtWorks is my current home. It\'s where I enjoy a healthy dose of technical leadership, consulting and hands-on development to deliver sustainable software.'
+    content: 'At Thoughtworks, I enjoyed a variety of experiences ranging from a healthy dose of technical leadership, consulting and hands-on development to deliver sustainable software.'
   },
   {
     src: './static/images/oclc-logo.png',
