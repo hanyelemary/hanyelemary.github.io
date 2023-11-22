@@ -9,6 +9,23 @@ import {
 } from '@ant-design/icons'
 
 export const publicationData = [{
+  date: '10-5-2023',
+  title: 'DevOps and CAB: Mortal Frenemies',
+  iconSrc: './static/images/it-rev-logo.jpeg',
+  backgroundColor: '#000000',
+  links: [
+    <Button icon={<YoutubeOutlined />} href='https://videos.itrevolution.com/watch/873159839/'>Watch video</Button>
+  ],
+  tags: [
+    'dora metrics',
+    'software delivery performance'
+  ],
+  content: [
+    <p>
+          Often dubbed as "eternal enemies", DevOps and the Change Advisory Board (CAB) pull organizations in different directions: rapid delivery vs strict governance. This presentation delves into the intrinsic differences between these approaches, exploring their origins, objectives, and cultural implications...
+    </p>
+  ]
+}, {
   date: '3-9-2022',
   title: 'Effective Experience APIs: Principles, Patterns, Anti-patterns',
   icon: <MediumCircleFilled />,
@@ -123,7 +140,7 @@ export const publicationData = [{
 {
   date: '',
   title: 'TDD for React/Redux in an Isomorphic Application',
-  iconSrc: './static/images/react.png',
+  iconSrc: './static/images/react.webp',
   links: [
     <Button icon={<YoutubeOutlined />} href='https://www.oreilly.com/library/view/test-driven-development-for/9780134698410/'>Watch video</Button>
   ],
@@ -141,7 +158,7 @@ export const publicationData = [{
 {
   date: '',
   title: 'A humbling experience through Web Content Accessibility',
-  iconSrc: './static/images/accessibility.png',
+  iconSrc: './static/images/accessibility.webp',
   links: [
     <Button icon={<YoutubeOutlined />} href='https://youtu.be/Br7S-o3jQ_4'>Watch video</Button>
   ],
