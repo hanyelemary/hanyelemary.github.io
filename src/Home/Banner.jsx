@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import QueueAnim from 'rc-queue-anim'
 import TweenOne from 'rc-tween-one'
-import { GithubFilled, LinkedinFilled, TwitterSquareFilled } from '@ant-design/icons'
+import { GithubFilled, LinkedinFilled, TwitterSquareFilled, MediumSquareFilled } from '@ant-design/icons'
 import BannerSVG from './BannerSVG'
 
 function Banner (props) {
@@ -29,6 +29,9 @@ function Banner (props) {
             </a>
             <a href='https://twitter.com/hanyelemary' title="Hany's Twitter Page" target='_blank' rel='noopener noreferrer'>
               <TwitterSquareFilled style={{ fontSize: '4em', marginLeft: '18px', color: '#333' }} />
+            </a>
+            <a href='https://hanyelemary.medium.com/' title="Hany's Medium Blog" target='_blank' rel='noopener noreferrer'>
+              <MediumSquareFilled style={{ fontSize: '4em', marginLeft: '18px', color: '#333' }} />
             </a>
           </div>
         </QueueAnim>
