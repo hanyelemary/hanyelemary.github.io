@@ -9,6 +9,62 @@ import {
 } from '@ant-design/icons'
 
 export const publicationData = [{
+  date: '3-9-2022',
+  title: 'Effective Experience APIs: Principles, Patterns, Anti-patterns',
+  icon: <MediumCircleFilled />,
+  backgroundColor: '#000000',
+  links: [
+    <Button icon={<FileOutlined />} href='https://medium.com/navalia/designing-effective-experience-apis-patterns-anti-patterns-and-guidelines-96cc0b26aced'>Read article</Button>
+  ],
+  tags: [
+    'domain driven design',
+    'api architecture',
+    'experience apis'
+  ],
+  content: [
+    <p>
+          To create delightful experiences for customers, there are best practices that we need to take into account. In this article, we cover Experience APIs’ principles, patterns, anti-patterns and design considerations....
+    </p>
+  ]
+}, {
+  date: '3-9-2022',
+  title: 'Customer Experience APIs: The missing layer',
+  icon: <MediumCircleFilled />,
+  backgroundColor: '#000000',
+  links: [
+    <Button icon={<FileOutlined />} href='https://medium.com/navalia/customer-experience-apis-the-missing-layer-58ecb93faa4b'>Read article</Button>
+  ],
+  tags: [
+    'domain driven design',
+    'architecture',
+    'customer experience'
+  ],
+  content: [
+    <p>
+          APIs are becoming more ubiquitous as time goes on. BFFs (Backend For Frontend) are common language, DDD is gaining more traction and API design principles are everywhere. Despite all this, we continue to see organizations following all of these practices struggle to adopt new channels....
+    </p>
+  ]
+},
+{
+  date: '6-15-2021',
+  title: 'Why you shouldn’t use booleans in REST APIs',
+  icon: <MediumCircleFilled />,
+  backgroundColor: '#000000',
+  links: [
+    <Button icon={<FileOutlined />} href='https://medium.com/geekculture/why-you-shouldnt-use-booleans-in-rest-apis-2747b187876c'>Read article</Button>
+  ],
+  tags: [
+    'rest api design',
+    'domain driven design',
+    'api development'
+  ],
+  content: [
+    <p>
+          Using booleans in API contracts. If not carefully considered, booleans can 1) Obstruct API Extensibility, 2) Mask and obfuscate Domain Clarity and 3) Hamper Code Readability and Maintainability...
+    </p>
+  ]
+},
+{
   date: '4-26-2020',
   title: 'Can Pair Programming and Code Reviews coexist?',
   icon: <MediumCircleFilled />,
