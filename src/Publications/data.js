@@ -9,6 +9,44 @@ import {
 } from '@ant-design/icons'
 
 export const publicationData = [{
+  date: '8-20-2024',
+  title: 'From Layered Teams to Domain-Aligned: A Journey to Predictable Success',
+  iconSrc: './static/images/it-rev-logo.jpeg',
+  backgroundColor: '#000000',
+  links: [
+    <Button icon={<YoutubeOutlined />} href='https://www.youtube.com/watch?v=9ns_FdPhurg'>Watch video</Button>
+  ],
+  tags: [
+    'team topologies',
+    'software delivery performance',
+    'devops'
+  ],
+  content: [
+    <p>
+          Traditional layered teams often struggle with high coordination, low autonomy, “design by committee" and a lack of predictability in outcomes, leading to inefficiencies and challenges in meeting project timelines. This talk highlights the transformative journey at Wendy’s in going from layered to domain-aligned teams...
+    </p>
+  ]
+},
+{
+  date: '3-15-2024',
+  title: 'The Most Common Domain-Driven Design Mistake',
+  icon: <MediumCircleFilled />,
+  backgroundColor: '#000000',
+  links: [
+    <Button icon={<FileOutlined />} href='https://medium.com/navalia/the-most-common-domain-driven-design-mistake-6c3f90e0ec2b'>Read article</Button>
+  ],
+  tags: [
+    'domain driven design',
+    'api architecture',
+    'common mistakes'
+  ],
+  content: [
+    <p>
+          I have made countless architectural mistakes while working in technology. But I’ve found that mistakes made with Domain-Driven Design (DDD) are specially unforgiving. Wrong abstractions in DDD have more disruptive implications than in other design approaches...
+    </p>
+  ]
+},
+{
   date: '10-5-2023',
   title: 'DevOps and CAB: Mortal Frenemies',
   iconSrc: './static/images/it-rev-logo.jpeg',
@@ -26,6 +64,25 @@ export const publicationData = [{
     </p>
   ]
 }, {
+  date: '10-5-2023',
+  title: 'Wright State alumnus, entrepreneur makes strides in AI technology',
+  iconSrc: './static/images/wsu-icon.png',
+  backgroundColor: '#000000',
+  links: [
+    <Button icon={<FileOutlined />} href='https://webapp2.wright.edu/web1/newsroom/2023/09/14/alumnus-entrepreneur-makes-strides-in-ai-technology/'>Read article</Button>
+  ],
+  tags: [
+    'ai',
+    'conversational ai',
+    'platforms'
+  ],
+  content: [
+    <p>
+          Elemary’s company, Navalia, is collaborating with Google to develop and implement a conversational AI initiative for the drive-through ordering system at Wendy’s restaurants. “The goal is to have an AI that will sound incredibly natural and be able to very accurately take your order,” said Elemary...
+    </p>
+  ]
+},
+{
   date: '3-9-2022',
   title: 'Effective Experience APIs: Principles, Patterns, Anti-patterns',
   icon: <MediumCircleFilled />,
